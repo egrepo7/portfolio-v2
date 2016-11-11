@@ -1,20 +1,31 @@
 @import url('http://fonts.googleapis.com/css?family=VT323');
 
 * {
-  font-family: 'VT323', monospace;
-  font-size: 16px;
+  font-family: 'Lato', sans-serif;;
+  font-size: 14px;
   box-sizing: border-box;
+  /*text-transform: uppercase;*/
 }
+
+.clear {
+  clear: both
+}
+
 html {
   background-color: #1c1c1c;
 }
+.purple {
+  background-color: #7721f0;
+}
 .blue {
   background-color: #0f9fda;
-
 }
 .grey {
   width: 100%;
   background-color: #f5f5f5;
+}
+.dark {
+  background-color: #1c1c1c;
 }
 .fullContainer {
   width: 100%;
@@ -23,22 +34,61 @@ html {
 .iContainer {
   width: 95%;
   margin: 0 auto;
-  padding: 2em 0;
+  padding: 3.5em 0;
 }
 .sContainer {
   width: 90%;
   margin: 0 auto;
 }
+.contactContainer {
+  width: 95%;
+  margin: 0 auto;
+  padding: 3em 0 5em 0;
+}
+.quoteContainer {
+  width: 95%;
+  margin: 0 auto;
+  padding: 6em 0;
+}
+.navContainer {
+  width: 95%;
+  margin: 0 auto;
+
+}
 header {
   background-color: #7721f0;
   width: 100%;
+
 }
 nav {
   background-color: #7721f0;
   height: 65px;
   border-bottom: 1px solid white;
+}
+
+#logo {
+  float: left;
+  color: white;
+  padding: 17px 0 0 15px;
+}
+#logo ul {
+  list-style: none;
+}
+
+#logo h4 {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  bottom: 5px;
 
 }
+#logo a {
+  color: white
+}
+#view {
+  font-size: .8em;
+}
+
 
 .navbar-toggle .icon-bar {
   background-color: white;
@@ -53,36 +103,70 @@ nav {
   color: white;
   background-color: #7721f0;
 }
+#bs-example-navbar-collapse-1 ul li a:hover {
+  background-color: #6e7b8b;
+
+}
 
 main {
-  padding-top: 75px;
+  padding: 8em 0 8em 0;
   background-color: #7721f0;
-  height: 320px;
+  /*height: 320px;*/
   text-align: center;
   color: white;
 }
-
+main a {
+  display: inline-block;
+  color:white;
+  width: 100px;
+  padding-top: 1em;
+}
+main a:hover {
+  color:white;
+}
+main a i {
+  margin-top: 10px;
+}
 main h1 {
   margin: 1em 0 .5em 0;
-}
+  font-size: 1.5em;
 
+}
+main p {
+  font-size: 1em;
+}
 .portfolio-grid {
   margin: 0;
   padding-left: 0px;
 }
 
 #portfolio ul li {
-  list-style: none;
-  display: inline-block;
   margin: 2.5px 0;
-
 }
-#portfolio ul li:nth-child(1){
-  margin-top: 5px;
+
+#PokeModal {
+  font-size: .8em;
+}
+#PokeModalContent ul {
+  padding-left: 20px;
+}
+#PokeModalContent ul li {
+  list-style: circle;
+}
+#modal-github {
+  float: left;
+}
+.modal-footer a {
+  color: black;
 }
 
 #about {
   color: #1c1c1c;
+}
+
+#about h1,
+#contact h1 {
+  font-size: 1.75em;
 }
 
 #about h1,
@@ -99,15 +183,25 @@ main h1 {
   height: 3px;
   max-width: 35px;
   width: 100%;
-  margin: .7em auto;
+  margin: .7em auto 1.5em auto;
 }
 
 #about p {
-  padding-bottom: 3em;
+  padding-bottom: 1em;
   line-height: 2em;
-  text-align: center;
+  text-align: left;
+  font-size: 1em;
 }
 
+#contact {
+  color: #f5f5f5;
+}
+#contact h1{
+
+}
+#contact .underline {
+  background-color: #6e7b8b;
+}
 #contact p {
   width: 90%;
   margin: 0 auto;
@@ -124,17 +218,99 @@ main h1 {
   padding: .5em;
 }
 #contact ul li a {
-  color: #1c1c1c;
-}
-
-.quoteContainer {
-  width: 95%;
-  margin: 0 auto;
-  padding: 4em 0;
+  color: #6e7b8b;
 }
 
 #quote h3,
 #quote p {
   font-size: 1.25em;
   color: white;
+}
+
+#copyright {
+  font-size: .8em;
+}
+#smallpic {
+  height: 300px;
+  margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+  #bs-example-navbar-collapse-1 ul {
+    padding-right: 20px;
+    padding-top: 5px;
+  }
+  #logo {
+    padding-left: 20px;
+  }
+  #logo a, #logo h4 {
+    font-size: 1.2em;
+  }
+  main {
+    padding: 10em 0 10em 0;
+    font-size: 1.5em;
+  }
+  #contact p{
+    width: 50%;
+  }
+  main a {
+    font-size: 1em;
+    width:150px;
+  }
+  .hovereffect h2, .hovereffect a {
+    margin-top: 20%;
+  }
+}
+
+@media (min-width: 960px) {
+  nav {
+    height: 80px;
+    /*max-width: 1200px;*/
+    margin: 0 auto;
+  }
+  #logo {
+    padding-top: 25px;
+    margin-left: 5%;
+  }
+  #bs-example-navbar-collapse-1 ul {
+    padding: 15px 25px 0 0;
+    margin-right: 5%;
+    letter-spacing: 1px;
+    font-size: 1em;
+  }
+
+  .portfolio-grid li {
+    width:33.333%;
+    display:inline-block;
+    padding: 0;
+    float: left;
+    height: 100%;
+
+  }
+  .hovereffect h2, .hovereffect a {
+    margin-top: 10%;
+  }
+
+  #PokeModalContent ul {
+    padding-left: 10px;
+    display:inline-block;
+  }
+  #PokeModalContent ul li {
+    padding-right: 5px;
+  }
+  .iContainer {
+    width: 70%;
+    padding: 7em 0;
+  }
+  .contactContainer {
+    width: 95%;
+    margin: 0 auto;
+    padding: 5em 0 7em 0;
+  }
+  .quoteContainer {
+    width: 95%;
+    margin: 0 auto;
+    padding: 8em 0;
+  }
 }
