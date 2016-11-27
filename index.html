@@ -4,7 +4,7 @@
   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Edgar Grepo</title>
+    <title>Edgar Grepo | Portfolio</title>
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
     <link href="static/css/style.css" rel="stylesheet">
     <link href="static/css/hover.css" rel="stylesheet">
@@ -13,13 +13,12 @@
 </head>
 <body>
   <div class='fullContainer'>
-    <header>
+    <header id='navbar-fader'>
       <div class='navContainer'>
         <nav class="navbar navbar-fixed-top">
           <div id='logo'>
             <a href="#">
-              <i class="fa fa-superpowers fa-2x" aria-hidden="true">
-              </i>
+              <img id='linklogo' src="static/images/blackmage.gif" alt="">
               <h4>Edgar Grepo</h4>
             </a>
           </div>
@@ -37,7 +36,7 @@
                       <a href="#about">About</a>
                   </li>
                   <li>
-                      <a href="#portfolio">Portfolio</a>
+                      <a href="#work">Work</a>
                   </li>
                   <li>
                       <a href="#contact">Contact</a>
@@ -49,151 +48,45 @@
     </header>
     <main>
       <h1>Web Developer & Aspiring Designer</h1>
-      <a href=#portfolio class='button'>
-        <span id='view'>VIEW PORTFOLIO</span>
-        <i class='fa fa-angle-down'></i>
-      </a>
     </main>
-    <section id='portfolio'>
+    <section id='work'>
       <ul class='portfolio-grid'>
         <li>
-          <!-- HOVER EFFECT -->
           <div id='pokeHover' class="hovereffect">
               <img class='img-responsive' height:'229px' src="static/images/pokesmockup.jpg" alt="">
               <div class="overlay">
                  <h2>FRIEND POKE!</h2>
                  <a class='info' href="" data-toggle="modal" data-target="#PokeModal">
-                 View Project</a>
+                 Project Overview</a>
               </div>
           </div>
-          <!-- END HOVER EFFECT -->
-          <!-- Modal -->
-          <div id="PokeModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Poke Your Friends!</h4>
-                </div>
-                <div class="modal-body" id='PokeModalContent'>
-                  <h4>Overview</h4>
-                  <p>This was my first full stack web app built using Python in the Pylot framework. The project demonstrates the "poke" functionality of Facebook. The goal was to be able track of all user information as well as user poke interaction using mySQL database. Twitter bootstrap was used to do front-end related styling.</p>
-                  <h4>Functionalities</h4>
-                  <ul>
-                    <li>Login/Registration of users</li>
-                    <li>Ability to poke other users</li>
-                    <li>Table of all users and their info</li>
-                    <li>Display of total poke interactions</li>
-                  </ul>
-                  <h4 class='clear'>Technologies</h4>
-                  <p>Python, Pylot, mySQL, HTML5, JavaScript, Twitter Bootstrap</p>
-                </div>
-                <div class="modal-footer">
-                  <a class='btn' href="https://github.com/egrepo7/fbPoke">
-                    <i class="fa fa-github fa-2x"></i>
-                  </a>
-                  <a href="https://52.41.146.142" class='btn btn-default'>View Project</a>
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end poke modal content -->
         </li>
         <li>
-          <!-- Top 5 modal -->
-          <!-- HOVER EFFECT -->
           <div class="hovereffect">
               <img class='img-responsive' src="static/images/top5mockup.jpg" alt="">
               <div class="overlay">
                  <h2>Top 5 Photo Voter</h2>
                  <a class='info' href="" data-toggle="modal" data-target="#top5modal">
-                 View Project</a>
+                 Project Overview</a>
               </div>
           </div>
-          <!-- Modal -->
-          <div id="top5modal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Top 5 Photo Viewer</h4>
-                </div>
-                <div class="modal-body" id='PokeModalContent'>
-                  <h4>Overview</h4>
-                  <p>Full Stack Web Application built using MEAN stack to demonstrate a voting system for multiple users and their photos. The back-end of this project was completed and deployed onto AWS all within 4.5 hours. Front-end was completed later using the Materialize framework.</p>
-                  <h4>Functionalities</h4>
-                  <ul>
-                    <li>Allows users to upload photos via URL</li>
-                    <li>Upvote and downvote options</li>
-                    <li>Table with uploaded photos and uploader info</li>
-                    <li>Logged user able to view and delete photos</li>
-                    <li>Filter function for photos</li>
-                  </ul>
-                  <h4 class='clear'>Technologies</h4>
-                  <p>JavaScript, MongoDB, Express, Angular, Node.JS, HTML5, MaterializeCSS</p>
-                </div>
-                <div class="modal-footer">
-                  <a class='btn' href="https://github.com/egrepo7/top5">
-                    <i class="fa fa-github fa-2x"></i>
-                  </a>
-                  <a href="http://52.43.100.254" class='btn btn-default'>View Project</a>
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Modal Content  -->
         </li>
         <li>
-          <!-- RWD Site -->
-          <!-- HOVER EFFECT -->
           <div class="hovereffect">
               <img class='img-responsive' src="static/images/codechallengemockup.jpg" alt="">
               <div class="overlay">
                  <h2>RWD Mock Web Page</h2>
                  <a class='info' href="" data-toggle="modal" data-target="#rwdSite">
-                 View Project</a>
+                 Project Overview</a>
               </div>
           </div>
-          <!-- Modal -->
-          <div id="rwdSite" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Responsive Web Page</h4>
-                </div>
-                <div class="modal-body" id='PokeModalContent'>
-                  <img id='smallpic' class='img-responsive' src="static/images/Demo-Site-v2.jpg" alt="">
-                  <h4>Overview</h4>
-                  <p>This was a challenge given to me for my very first interview for a front end web developer position. I was given a zip file containing various images. The goal was to create a fully responsive site based on the image above. I was not given an example image of mobile view and told to use my best judgement. Initially, I was unable to complete the assignment and proceed to the next step of the interview process. The version you are about to view is my second attempt, a complete version.</p>
-                  <h4>Functionalities</h4>
-                  <p>Responsive Design: Viewable on mobile, ipad, desktop</p>
-                  <h4 class='clear'>Technologies</h4>
-                  <p>HTML5, CSS3, JQuery, JavaScript, Bootstrap</p>
-                </div>
-                <div class="modal-footer clear">
-                  <a class='btn' href="https://www.github.com/egrepo7">
-                    <i class="fa fa-github fa-2x"></i>
-                  </a>
-                  <a href="" class='btn btn-default'>View Project</a>
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Modal Content  -->
         </li>
       </ul>
     </section>
       <section id='quote' class='blue clear'>
         <div class='quoteContainer'>
-          <h3>"Feed the soul, starve the ego"</h3>
-          <p>- Adam Goldstein</p>
+          <h3>"Just because something doesn’t do what you planned it to do doesn’t mean it’s useless."</h3>
+          <p> – Thomas Edison</p>
         </div>
       </section>
       <section id='about' class='grey'>
@@ -201,8 +94,8 @@
         <h1>ABOUT</h1>
         <div class='underline'></div>
         <img src="" alt="">
-        <p class='sContainer'>My name is Edgar Grepo. I'm a full stack developer eager to build on my front end development skills. Born in Winnipeg, Manitoba and raised in the Seattle area of the beautiful Pacific Northwest. I practice daily using HTML, CSS, JavaScript, PHP, and Python. I am always eager to learn new technologies!</p>
-        <p class='sContainer'>Having a Bachelor's of Science in Exercise Science, I am always looking for new workouts and ways to be healthier. I also am an avid video gamer, spending lots of time in Summoner's Rift :)</p>
+        <p class='sContainer'>My name is Edgar Grepo. I'm a full stack developer eager to build on my front end development skills. Born in Winnipeg, Manitoba and raised in the Seattle area. I practice daily using HTML, CSS, JavaScript, PHP, and Python. I am always eager to learn new technologies!</p>
+        <p class='sContainer'>Having a Bachelor's of Science in Exercise Science, I am always looking for new workouts and ways to be healthier. I enjoy hiking as well, spending lots of time exploring the beautiful Pacific Northwest!  Side note; I am also quite the gamer, spending lots of my time in Summoner's Rift :)</p>
         </div>
       </section>
       <footer id='contact' class='dark'>
@@ -230,8 +123,104 @@
           <p id='copyright'>&copy; 2016 Edgar Grepo. All Rights Reserved </p>
         </div>
       </footer>
+      <!---           MODALS               -->
+      <!-- Modal -->
+      <div id="PokeModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Poke Your Friends!</h4>
+            </div>
+            <div class="modal-body" id='PokeModalContent'>
+              <h4>Overview</h4>
+              <p>This was my first full stack web app built using Python in the Pylot framework. The project demonstrates the "poke" functionality of Facebook. The goal was to be able track of all user information as well as user poke interaction using mySQL database. Twitter bootstrap was used to do front-end related styling.</p>
+              <h4>Functionalities</h4>
+              <ul>
+                <li>Login/Registration of users</li>
+                <li>Ability to poke other users</li>
+                <li>Table of all users and their info</li>
+                <li>Display of total poke interactions</li>
+              </ul>
+              <h4 class='clear'>Technologies</h4>
+              <p>Python, Pylot, mySQL, HTML5, JavaScript, Twitter Bootstrap</p>
+            </div>
+            <div class="modal-footer">
+              <a class='btn' href="https://github.com/egrepo7/fbPoke">
+                <i class="fa fa-github fa-2x"></i>
+              </a>
+              <a href="https://52.41.146.142" class='btn btn-default'>View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end poke modal content -->
+      <!-- Modal -->
+      <div id="top5modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Top 5 Photo Viewer</h4>
+            </div>
+            <div class="modal-body" id='PokeModalContent'>
+              <h4>Overview</h4>
+              <p>Full Stack Web Application built using MEAN stack to demonstrate a voting system for multiple users and their photos. The back-end of this project was completed and deployed onto AWS all within 4.5 hours. Front-end was completed later using the Materialize framework.</p>
+              <h4>Functionalities</h4>
+              <ul>
+                <li>Allows users to upload photos via URL</li>
+                <li>Upvote and downvote options</li>
+                <li>Table with uploaded photos and uploader info</li>
+                <li>Logged user able to view and delete photos</li>
+                <li>Filter function for photos</li>
+              </ul>
+              <h4 class='clear'>Technologies</h4>
+              <p>JavaScript, MongoDB, Express, Angular, Node.JS, HTML5, MaterializeCSS</p>
+            </div>
+            <div class="modal-footer">
+              <a class='btn' href="https://github.com/egrepo7/top5">
+                <i class="fa fa-github fa-2x"></i>
+              </a>
+              <a href="http://52.43.100.254" class='btn btn-default'>View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal Content  -->
+      <!-- Modal -->
+      <div id="rwdSite" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Responsive Web Page</h4>
+            </div>
+            <div class="modal-body" id='PokeModalContent'>
+              <img id='smallpic' class='img-responsive' src="static/images/Demo-Site-v2.jpg" alt="">
+              <h4>Overview</h4>
+              <p>This was a challenge given to me for my very first interview for a front end web developer position. I was given a zip file containing various images. The goal was to create a fully responsive site based on the image above. I was not given an example image of mobile view and told to use my best judgement. Initially, I was unable to complete the assignment and proceed to the next step of the interview process. The version you are about to view is my second attempt, a complete version.</p>
+              <h4>Functionalities</h4>
+              <p>Responsive Design: Viewable on Mobile, Ipad, Desktop</p>
+              <h4 class='clear'>Technologies</h4>
+              <p>HTML5, CSS3, JQuery, JavaScript, Bootstrap</p>
+            </div>
+            <div class="modal-footer clear">
+              <a class='btn' href="https://github.com/egrepo7/ResponsiveSite-1">
+                <i class="fa fa-github fa-2x"></i>
+              </a>
+              <a href="https://responsive-site1.surge.sh" class='btn btn-default'>View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal Content  -->
+      <!--            MODALS               -->
   </div>
     <script src="static/js/jquery.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
+    <script src='static/js/fader.js'></script>
 </body>
 </html>

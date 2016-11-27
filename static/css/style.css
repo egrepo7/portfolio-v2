@@ -1,10 +1,10 @@
 @import url('http://fonts.googleapis.com/css?family=VT323');
 
 * {
-  font-family: 'Lato', sans-serif;;
-  font-size: 14px;
+  font-family: 'VT323', 'sans-serif', 'serif';
+  font-size: 18px;
   box-sizing: border-box;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
 }
 
 .clear {
@@ -69,7 +69,7 @@ nav {
 #logo {
   float: left;
   color: white;
-  padding: 17px 0 0 15px;
+  padding: 0px 0 0 15px;
 }
 #logo ul {
   list-style: none;
@@ -79,11 +79,20 @@ nav {
   display: inline-block;
   margin: 0;
   position: relative;
-  bottom: 5px;
+  left: -10px;
+  top: 5px;
 
 }
-#logo a {
-  color: white
+
+#logo a  {
+  color: white;
+  padding-top: 10px;
+
+}
+#linklogo {
+  width: 20%;
+  padding-top: 0px;
+
 }
 #view {
   font-size: .8em;
@@ -111,7 +120,6 @@ nav {
 main {
   padding: 8em 0 8em 0;
   background-color: #7721f0;
-  /*height: 320px;*/
   text-align: center;
   color: white;
 }
@@ -128,8 +136,8 @@ main a i {
   margin-top: 10px;
 }
 main h1 {
-  margin: 1em 0 .5em 0;
-  font-size: 1.5em;
+  margin: 1.5em 0 2em 0;
+  font-size: 1.3em;
 
 }
 main p {
@@ -146,6 +154,12 @@ main p {
 
 #PokeModal {
   font-size: .8em;
+}
+#PokeModalContent h4 {
+  font-family: 'Lato', 'sans-serif', 'serif';
+}
+#PokeModalContent h4 {
+  text-decoration: underline;;
 }
 #PokeModalContent ul {
   padding-left: 20px;
@@ -243,12 +257,18 @@ main p {
   }
   #logo {
     padding-left: 20px;
+    padding-top: 5px;
   }
   #logo a, #logo h4 {
     font-size: 1.2em;
   }
+  #bs-example-navbar-collapse-1 ul li a {
+    color: white;
+    font-size: 1.2em;
+    background-color: #7721f0;
+  }
   main {
-    padding: 10em 0 10em 0;
+    padding: 7em 0 7em 0;
     font-size: 1.5em;
   }
   #contact p{
@@ -264,15 +284,19 @@ main p {
 }
 
 @media (min-width: 960px) {
+  * {
+    font-size: 20px;
+  }
   nav {
     height: 80px;
-    /*max-width: 1200px;*/
+    max-width: 1200px;
     margin: 0 auto;
   }
   #logo {
-    padding-top: 25px;
+    padding-top: 15px;
     margin-left: 5%;
   }
+
   #bs-example-navbar-collapse-1 ul {
     padding: 15px 25px 0 0;
     margin-right: 5%;
@@ -281,7 +305,7 @@ main p {
   }
 
   .portfolio-grid li {
-    width:33.333%;
+    width: 33.333%;
     display:inline-block;
     padding: 0;
     float: left;
@@ -301,7 +325,7 @@ main p {
   }
   .iContainer {
     width: 70%;
-    padding: 7em 0;
+    padding: 5em 0;
   }
   .contactContainer {
     width: 95%;
